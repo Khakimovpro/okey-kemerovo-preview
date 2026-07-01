@@ -1,0 +1,58 @@
+User-agent: *
+Allow: /
+
+# AI-поисковые краулеры — разрешены для видимости в ответах ИИ-поиска
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: YandexAdditional
+Allow: /
+
+# Дополнительные AI-поисковые краулеры (видимость в Apple Intelligence/Siri, Amazon, Perplexity live, DuckDuckGo AI)
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+# Тренировочные краулеры без пользы для поиска — заблокированы
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: cohere-ai
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+# Яндекс: не плодить дубли страниц из-за рекламных и переходных параметров.
+Clean-param: utm_source&utm_medium&utm_campaign&utm_content&utm_term&yclid&gclid&fbclid
+
+Sitemap: https://okey42.ru/sitemap-index.xml
